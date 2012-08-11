@@ -6,8 +6,11 @@ var app = express();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
+var todoItems = [Todo("A"), Todo("B", true)];
+
 app.get("/", function index(req,resp) {
-        resp.render("index",{todos: [1,2,3]});
+    console.log(todoItems);   
+    resp.render("index",{todos: todoItems});
 });
 
 

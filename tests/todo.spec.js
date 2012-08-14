@@ -13,6 +13,10 @@ describe("when a todo is created", function() {
     it("should be possible to create it with state 'done'", function() {
         expect(Todo("Test", true).isDone()).toBe(true);
     });
+    
+    it("should have an id", function() {
+        expect(Todo("Test").getId()).not.toBe(undefined);
+    });
 });
 
 describe("when a todo is marked as done", function() {

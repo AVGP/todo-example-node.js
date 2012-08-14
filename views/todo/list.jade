@@ -1,3 +1,8 @@
-ul
+ul#todos
     each todo in todos
-        li= todo.toString()
+        if todo.isDone()
+            li.done= todo.toString()
+        else
+            li(id=todo.getId())
+                = todo.toString()
+                input(type="checkbox", value=todo.getId())

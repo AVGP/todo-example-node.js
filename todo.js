@@ -1,8 +1,10 @@
 var Todo = function(msg, done) {
     var self = {
         done: false,
-        msg: ""
+        msg: "",
     };
+    
+    var _id = (new Date).getTime();
     
     if(msg === undefined) return false;
     self.msg = msg;
@@ -15,6 +17,10 @@ var Todo = function(msg, done) {
     
     self.isDone = function() {
         return self.done;
+    };
+    
+    self.getId = function() {
+        return _id;
     };
     
     self.toString = function() {

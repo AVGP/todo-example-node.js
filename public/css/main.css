@@ -1,0 +1,24 @@
+html { 
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #CBF1F3;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+div#wrap {
+    height: 90%;
+    width: 900px;
+    margin: 5% auto;
+    background: #fff;
+    box-shadow: 2px 2px 2px 2px #888;
+}
+
+li.done {
+    text-decoration: line-through;
+}
